@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!-- still need an <html> tag here; the DOCTYPE alone doesn't get the job done -->
 <head>
 <title>SuperBlog</title>
 <link href="blogstyles.css" type="text/css" rel="stylesheet" />
@@ -16,11 +16,11 @@
 			<li><a href="archives.html">archives</a></li>
 			<li><a href="contact.html">contact</a></li>
 	</ul>
-	<hr />
+	<hr /> <!-- <hr> tags don't self-close; it's just <hr> -->
 
-	<div class="leftcolumn">
-			<h5>RECENT POSTS</h5><hr />
-			<ul> 
+	<div class="leftcolumn"> <!-- if this is a nav, you can use the html5 <nav> tag -->
+			<h5>RECENT POSTS</h5><hr /> <!-- don't use header tags with arbitrary numbers just to get the sizing right; the number should correspond to the header's position in the document outline hierarchy. check out http://html5doctor.com/outlines/ to learn about how the html5 document outline works -->
+			<ul> <!-- this isn't really an unordered list, because the list items are meant to be understood in a specific order (i.e. by date). Using an <ol> is more semantically correct -->
 				<li><a href="#post1">The quick, brown fox jumps over a lazy dog.</a></li>
 				<li><a href="#post2">Jolt my wax bed.</a></li>
 				<li><a href="#post3">A very bad quack jinx zippy fowls.</a></li>
@@ -33,7 +33,7 @@
 	</div>
 
 	<div class="rightcolumn">
-		<p id="post1">FEB 13, 2013</p>
+		<p id="post1">FEB 13, 2013</p> <!-- these are probably more headers than a paragraphs, or perhaps <time> stamps: https://developer.mozilla.org/en-US/docs/HTML/HTML_Elements/time -->
 		<h2>THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.</h2>
 		<p>DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! <em>"Now fax quiz Jack!"</em> my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk.</p><hr />
 
