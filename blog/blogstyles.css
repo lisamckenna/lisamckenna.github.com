@@ -1,95 +1,110 @@
-/*question: only 1/3 of the blog logo is "hover-able", what styles need to be added/adjusted?*/
-#bloglogo {
+body {
+	font-family: HelveticaNeue-Light; Arial; sans-serif;
+	font-size: 14px;
 	text-align: left;
-	margin-left: 15px;
+	line-height: 1.5em;
 }
 
-.menu {
-	width: 993px;
-	padding: 15px;
-	text-align: right;
-	position: absolute;
-	top: 40px;
+p:em {
+	font-family: HelveticaNeue-LightItalic;
 }
 
-.menu li {
-	display: inline;
-	margin: 15px;
-	font-family: HelveticaNeue-Bold;
-	font-size: 18px;
+/*this style I'm only using on the about page first paragraph. it's making it be all paragraph styles. NOW IT'S MISSING, what did i do?????*/
+.dropcap:first-letter {
+	font-family: HelveticaNeue-Bold; Arial; sans-serif;
+	font-size: 300%;
+	color: #FF9140;
 }
 
-a:visited {
-	color: #585858;
-	text-decoration: none;
+ul.navlist {
+	color: #ffffff;
+	font-family: HelveticaNeue-Light; Arial; sans-serif;
+	font-size: 24px;
+	text-align: left;
+	line-height: 1.4em;
+	list-style-type: square;
+}
+
+ul.navlist a:visited {
+	color: white;
+}
+
+.recent-posts {
+	font-family: HelveticaNeue-Light; Arial; sans-serif;
+	font-size: 16px;
+	text-align: left;
+	line-height: 1.5em;
+}
+
+.posts {
+	width: 600px;
 }
 
 a:link {
-	color: #6699CC;
+	color: red;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #B40431;
+	color: #67E300;
 	text-decoration: none;
 }
 
-/*question: if the body is HelvNeueLight, why when <em> and <strong> are used, they revert to Arial?*/
-body {
+a:visited {
+	color: red;
+	text-decoration: none;
+}
+#archive-year {
+	font-family: HelveticaNeue-Bold; Arial; sans-serif;
 	text-align: left;
-	width: 100%;
-	font-family: HelveticaNeue-Light;
-	font-size: 14px;
-	line-height: 2em; 
-}
-
-.leftcolumn {
-	float: left;
-	width: 240px;
-	margin: 10px;
-	padding-left: 15px;
-}
-
-.rightcolumn {
-	float: left;
-	width: 642px;
-	margin: 10px;
-	padding-left: 50px;
+	color: #FF9140;
 }
 
 h5 {
-	font-family: HelveticaNeue-Bold;
-	color: #6699CC;
-	font-size: 100%;
+	font-family: HelveticaNeue-Light; Arial; sans-serif;
+	text-align: left;
 }
 
-h2 {
-	font-family: HelveticaNeue-Bold;
-	color: #BBBBBB;
-	font-size: 150%;
+p.intro:first-letter {
+	font-size: 200%;
 }
 
-.img.align-left {
+img.align-left {
 	float: left;
-	margin-right: 10px;
+	margin-right: 10px
 }
 
-/*next two styles were tweaked from Duckett book*/
-.column1of3, .column2of3, .column3of3 {
-	width: 300px;
-	float: left;
-	margin: 10px;
+.image {
+	background-image: url("images/swirls.png");
+	margin-bottom: 40px;
+	box-shadow: 12px;
+}
+
+.archive-text {
+	color: #ffffff;
 	padding: 10px;
-	background-color: #BEE4EF;
 }
 
-.clear {
-	clear: left;
+/*==========================this is form stuff from the book=======================*/
+.contact-form {
+	border-bottom: 1px solid #efefef;
+	margin: 10px;
+	padding-bottom: 10px;
+	width: 260px;
 }
 
-/*h1 style is solely for archives page*/
-h1 {
-	font-family: HelveticaNeue-Light;
-	color: #6C9BA5;
-	font-size: 125%;
+.title {
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding-right: 10px;
 }
+
+.radio-buttons label {
+	float: none;
+}
+
+.submit {
+	text-align: right;
+}
+/*==========================end form stuff from the book=======================*/

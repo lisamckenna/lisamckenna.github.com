@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 
-<head>
-<title>SuperBlog</title>
-<link href="blogstyles.css" type="text/css" rel="stylesheet" />
-</head>	
+<header>
+	<title>Super Blog</title>
+	<link href="blogstyles.css" type="text/css" rel="stylesheet" />
+</header>
 
 <body>
 	<header>
-		<div id="bloglogo">
-			<a href="index.html"><img src="images/blog-logo.png" alt="Super Blog"></a>
-		</div>
+		<a href="index.html"><img src="images/blog-logo.png"><alt="superblog"></a>
 	</header>
-	<ul class="menu">
-			<li><a href="about.html">about</a></li>
-			<li><a href="archives.html">archives</a></li>
-			<li><a href="contact.html">contact</a></li>
+
+	<ul class="navlist image">
+		<li><a href="about.html">about</a></li>
+		<li><a href="archives.html">archives</a></li>
+		<li><a href="contact.html"><strong>contact</strong></a></li>
 	</ul>
-	<hr />
 
-	<div class="leftcolumn">
-			<h5>WHY CONTACT US?</h5><hr />
-			<p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialiay.</p>
-	</div>
+	<img src="images/phone.png" alt="phone"/>
 
-	<div class="rightcolumn">
-			<p><img src="images/phone.jpg" alt="phone" class="align-left" /></p>
-			<h2>CONTACT US</h2>
-			<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p><hr/>
-			<h5>BETTER WAYS TO REACH US</h5>
-			<ul>
-				<li>you could try this way</li>
-				<li>or you could attempt this way</li>
-				<li>if you're lucky we can be reached this way</li>
-			</ul><hr/>
-	</div>
+	<!--++++++++++++++++below code is taken from the duckett book++++++++++++++++-->
+	
+	<form action="example.php" method="post">
+			<div class="contact-form">
+				<label for="name" class="title">Name:</label>
+				<input type="text" id="name" name="name" />
+			</div>
+			<div class="contact-form">
+				<label for="email" class="title">Email:</label>
+				<input type="email" id="email" name="email" />
+			</div>
+			<div class="contact-form radio-buttons">
+				<span class="title">Gender:</span>
+				<input type="radio" name="gender" id="male" value="M" />
+				<label for="male">M</label>
+				<input type="radio" name="gender" id="female" value="F" />
+				<label for="female">F</label><br />
+			</div>
+			<div class="contact-form submit">
+				<input type="submit" value="Register" id="submit" />
+			</div>
+	</form>
+
+	<p><hr>&copy; Super Blog 2013</p>
+
 </body>
 </html>
