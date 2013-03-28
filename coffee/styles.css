@@ -19,6 +19,7 @@
 	background-color: #230b03;
 }
 
+/*=============is inline what makes header nav elements horizontal?=============*/
 .menu li {
 	display: inline;
 	margin: 15px;
@@ -26,17 +27,9 @@
 	font-family: Georgia;
 	font-size: 18px;
 }
+/*==========================*/
 
-.beans li {
-	text-align: left;
-	font-family: Georgia;
-	font-size: 16px;
-	margin: 20px 30px 0px 0px;
-	margin-left: 150px;
-	margin-right: 150px;
-	list-style-image: url("images/bullet-bean.png");
-}
-
+/*are there rules of CSS order? I know what's on bottom takes precendence, but should basics be on top like body*/
 body {
 	text-align: center;
 	width: 100%;
@@ -56,6 +49,16 @@ body {
 	width: 360px;
 	margin: 10px;
 	padding-left: 75px;
+}
+
+.beans li {
+	text-align: left;
+	font-family: Georgia;
+	font-size: 16px;
+	margin: 20px 30px 0px 0px;
+	margin-left: 150px;
+	margin-right: 150px;
+	list-style-image: url("images/bullet-bean.png");
 }
 
 a:link {
