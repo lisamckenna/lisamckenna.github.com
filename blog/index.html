@@ -7,6 +7,30 @@
 
 <!--what if i make a change to header (like changing the alt), 
 	I'd have to change it manually on all pages now. Is there a way to have it be global change?-->
+	
+<!--	this is a great point. it's also one of the reasons that PHP, despite being a hideous and bodged-together language,
+	is so hugely popular. with PHP, it's simply a matter of using what are called "includes". 
+	
+	you split up your files into templates like header.inc, footer.inc (the .inc filename is just to remind you 
+	that they're not standalone pages; you could also show this by naming them _header.php, _footer.php, or whatever you like).
+	You just put them in an "includes" folder on your server. Then, on each page, you just write:
+	
+	<?php
+	include "includes/header.inc";
+	?>
+	
+	that will retrieve your .inc file, evaluate it, and inject it into that space. You could also do this with JavaScript,
+	but it's usually better to do it on the server side if you can (for many reasons, including SEO and accessibility).
+	
+	now for the downer: you need to serve the files off a PHP-enabled web server for this to work. 
+	almost all basic web servers have PHP installed, but this means no opening local pages directly in the browser;
+	you have to download a utility like MAMP (http://www.mamp.info/en/index.html) to develop locally.
+	
+	happy to go over all this on Thursday if we have a moment before/after class!
+	
+	-Geordie
+	
+	-->
 <body>
 	<header>
 		<a href="index.html"><img src="images/blog-logo.png"><alt="superblog"></a>
