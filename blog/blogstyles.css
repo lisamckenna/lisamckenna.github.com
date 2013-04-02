@@ -1,6 +1,8 @@
 /*Questions:
 --is it necessary to put <text-align: left> in CSS? Or is it default? I notice when I remove it from my styles the text remains in place.*/
 
+/*G: Not necessary; it's the default for left-to-right languages like English. */
+
 @font-face {
     font-family: 'LeagueGothicRegular';
     src: url('fonts/League_Gothic-webfont.eot');
@@ -12,12 +14,15 @@
     font-style: normal;
 }
 
+/*G: why font-size in pixels and line-height in ems? suggest putting both into ems */
+
 body {
 	font-family: HelveticaNeue-Light; Arial; sans-serif;
 	font-size: 14px;
 	line-height: 1.5em;
 }
 
+/*G: don't forget a fallback font here! also, <em> isn't a pseudo-element, so shouldn't use the colon. just use "p em" */
 p:em {
 	font-family: HelveticaNeue-LightItalic;
 }
@@ -90,6 +95,10 @@ p.intro:first-letter {
 }
 
 /*screaming lady image on about page*/
+/*G: try to use semantic classes rather than stylistic ones; e.g. ".illustration" rather than ".align-left". 
+	 this will be very helpful when it comes to responsive design, because the class names will continue 
+	 to be relevant even when items move around the page. */
+
 img.align-left {
 	float: left;
 	margin-right: 10px
