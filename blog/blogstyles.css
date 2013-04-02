@@ -1,7 +1,20 @@
+/*Questions:
+--is it necessary to put <text-align: left> in CSS? Or is it default? I notice when I remove it from my styles the text remains in place.*/
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('fonts/League_Gothic-webfont.eot');
+    src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/League_Gothic-webfont.woff') format('woff'),
+         url('fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
 	font-family: HelveticaNeue-Light; Arial; sans-serif;
 	font-size: 14px;
-	text-align: left;
 	line-height: 1.5em;
 }
 
@@ -9,20 +22,19 @@ p:em {
 	font-family: HelveticaNeue-LightItalic;
 }
 
-/*this style I'm only using on the about page first paragraph. it's making it be all paragraph styles. NOW IT'S MISSING, what did i do?????*/
 .dropcap:first-letter {
-	font-family: HelveticaNeue-Bold; Arial; sans-serif;
-	font-size: 300%;
+	font-family: 'LeagueGothicRegular'; Arial; sans-serif;
+	font-size: 500%;
 	color: #FF9140;
 }
 
 ul.navlist {
-	color: #ffffff;
+	color: white;
 	font-family: HelveticaNeue-Light; Arial; sans-serif;
-	font-size: 24px;
-	text-align: left;
+	font-size: 20px;
 	line-height: 1.4em;
 	list-style-type: square;
+	text-transform: lowercase;
 }
 
 ul.navlist a:visited {
@@ -32,7 +44,6 @@ ul.navlist a:visited {
 .recent-posts {
 	font-family: HelveticaNeue-Light; Arial; sans-serif;
 	font-size: 16px;
-	text-align: left;
 	line-height: 1.5em;
 }
 
@@ -54,30 +65,40 @@ a:visited {
 	color: red;
 	text-decoration: none;
 }
-#archive-year {
-	font-family: HelveticaNeue-Bold; Arial; sans-serif;
-	text-align: left;
-	color: #FF9140;
+
+.archive-year {
+	font-family: 'LeagueGothicRegular'; Arial; sans-serif;
+	color: #006056;
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: .15em;
 }
 
 h5 {
 	font-family: HelveticaNeue-Light; Arial; sans-serif;
-	text-align: left;
 }
 
+h2 {
+    font-family: 'LeagueGothicRegular'; Arial; sans-serif;
+    font-size: 36px;
+} 
+
+/*I have no idea what I made here, or what it's for. Dust bunny.*/
 p.intro:first-letter {
+	font-family: 'LeagueGothicRegular'; Arial; sans-serif;
 	font-size: 200%;
 }
 
+/*screaming lady image on about page*/
 img.align-left {
 	float: left;
 	margin-right: 10px
 }
 
+/*playing around with a background image*/
 .image {
 	background-image: url("images/swirls.png");
 	margin-bottom: 40px;
-	box-shadow: 12px;
 }
 
 .archive-text {
@@ -85,7 +106,7 @@ img.align-left {
 	padding: 10px;
 }
 
-/*==========================this is form stuff from the book=======================*/
+/*==========================this is form stuff from the book, i didn't style this=======================*/
 .contact-form {
 	border-bottom: 1px solid #efefef;
 	margin: 10px;
