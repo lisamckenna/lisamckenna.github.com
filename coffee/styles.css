@@ -4,7 +4,7 @@
 
 #logo {
 	text-align: center;
-	position: fixed;
+	position: fixed; /* careful with fixed positioning... it'll cause your logo to move when you scroll the page. -G */	
 	top: 0px;
 	margin-left: 450px;
 	margin-top: 20px;
@@ -20,6 +20,7 @@
 }
 
 /*=============is inline what makes header nav elements horizontal?=============*/
+/* yes! <li> elements are display:block by default, so you need to set them to inline so they'll sit next to each other */
 .menu li {
 	display: inline;
 	margin: 15px;
@@ -30,6 +31,9 @@
 /*==========================*/
 
 /*are there rules of CSS order? I know what's on bottom takes precendence, but should basics be on top like body*/
+/* top-to-bottom is really a tiebreaker; the most important thing is specificity: http://css-tricks.com/specifics-on-css-specificity/
+   conventionally, less specific styles (e.g. "body") tend to go near the top, to reduce confusion when reading the styles. -G */
+
 body {
 	text-align: center;
 	width: 100%;
@@ -50,6 +54,10 @@ body {
 	margin: 10px;
 	padding-left: 75px;
 }
+
+/* not to get too far ahead of ourselves, but it helps to keep your CSS class names semantic rather than presentational;
+   e.g. ".leftcolumn" presupposes that the column will always be on the left, when in fact you might want that to stack vertically
+   in a responsive layout. instead, try something like "col-1-of-2". just a good habit to get into. -G */
 
 .beans li {
 	text-align: left;
