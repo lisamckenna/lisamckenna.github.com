@@ -31,7 +31,7 @@ h4 {
 
 #logo {
 	text-align: center;
-	position: fixed; /*should not be fixed?*/
+	position: fixed; /*logo should not be fixed?*/
 	top: 0px;
 	margin-left: 450px;
 	margin-top: 20px;
