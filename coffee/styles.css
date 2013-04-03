@@ -2,9 +2,36 @@
 	text-align: left;
 }
 
+body {
+	text-align: center;
+	width: 100%;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 16px;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Wendy One'; sans-serif;
+	color: #935d38;
+}
+
+h3 {
+	text-align: center;
+	font-family: 'Wendy One'; sans-serif;
+	font-size: 20px;
+	color: #935d38;
+}
+
+h4 {
+	text-align: center;
+	font-family: 'Wendy One'; sans-serif;
+	font-size: 16px;
+	color: #935d38;
+}
+
 #logo {
 	text-align: center;
-	position: fixed;
+	position: fixed; /*should not be fixed?*/
 	top: 0px;
 	margin-left: 450px;
 	margin-top: 20px;
@@ -19,41 +46,31 @@
 	background-color: #230b03;
 }
 
-/*=============is inline what makes header nav elements horizontal?=============*/
 .menu li {
 	display: inline;
 	margin: 15px;
 	color: #999966;
-	font-family: Georgia;
+	font-family: 'Libre Baskerville', serif;
 	font-size: 18px;
-}
-/*==========================*/
-
-/*are there rules of CSS order? I know what's on bottom takes precendence, but should basics be on top like body*/
-body {
-	text-align: center;
-	width: 100%;
-	font-family: Georgia;
-	font-size: 16px;
 }
 
 .leftcolumn {
 	float: left;
-	width: 360px;
+	width: 400px;
 	margin: 10px;
-	padding-left: 100px;
+	padding-left: 75px;
 }
 
 .rightcolumn {
 	float: left;
-	width: 360px;
+	width: 400px;
 	margin: 10px;
 	padding-left: 75px;
 }
 
 .beans li {
 	text-align: left;
-	font-family: Georgia;
+	font-family: 'Libre Baskerville', serif;
 	font-size: 16px;
 	margin: 20px 30px 0px 0px;
 	margin-left: 150px;
@@ -76,20 +93,6 @@ a:hover {
 	text-decoration: none;
 }
 
-h3 {
-	text-align: center;
-	font-family: Arial;
-	font-size: 20px;
-	color: #935d38;
-}
-
-h4 {
-	text-align: center;
-	font-family: Arial;
-	font-size: 16px;
-	color: #935d38;
-}
-
 .footer {
 	width: 1021px;
 	height: 113px;
@@ -98,7 +101,7 @@ h4 {
 
 #footerbody {
 	text-align: center;
-	font-family: Georgia;
+	font-family: 'Libre Baskerville', serif;
 	font-size: 14px;
 	margin: 30px;
 	padding: 20px;
