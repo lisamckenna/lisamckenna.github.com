@@ -9,20 +9,25 @@
 
 <body>
 	<header>
-		<a href="index.html"><img src="images/blog-logo.png" alt="super blog"/></a>
+		<div id="bloglogo">
+			<a href="index.html"><img src="images/blog-logo.png" alt="Super Blog"></a>
+		</div>
 	</header>
-
-	<ul class="navlist image">
-		<li><a href="about.html">about</a></li>
-		<li><a href="archives.html">archives</a></li>
-		<li><a href="contact.html"><strong>contact</strong></a></li>
+	<ul class="menu">
+			<li><a href="about.html">about</a></li>
+			<li><a href="archives.html">archives</a></li>
+			<li><a href="contact.html">contact</a></li>
 	</ul>
 
-	<img src="images/phone.png" alt="phone"/>
+	<div class="column1of2">
+		<p class="headline">HOW TO REACH US</p>
+		<p>DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</p> 
+	</div>
 
-	<!--below html is taken from the duckett book-->
-	
-	<form action="example.php" method="post">
+	<div class="column2of2">
+		<img src="images/phone.png" alt="phone"/>
+<!--below  form is taken straight from the duckett book, for now-->
+		<form action="example.php" method="post">
 			<div class="contact-form">
 				<label for="name" class="title">Name:</label>
 				<input type="text" id="name" name="name" />
@@ -41,9 +46,12 @@
 			<div class="contact-form submit">
 				<input type="submit" value="Register" id="submit" />
 			</div>
-	</form>
+		</form>
+	</div>
 
-	<p>&copy; Super Blog 2013</p>
+	<div class="footer">
+		<p>&copy; Super Blog 2013</p>
+	</div>
 
 </body>
 </html>

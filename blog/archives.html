@@ -9,18 +9,19 @@
 
 <body>
 	<header>
-		<a href="index.html"><img src="images/blog-logo.png" alt="super blog"/></a>
+		<div id="bloglogo">
+			<a href="index.html"><img src="images/blog-logo.png" alt="Super Blog"></a>
+		</div>
 	</header>
-
-	<ul class="navlist image">
-		<li><a href="about.html">about</a></li>
-		<li><a href="archives.html"><strong>archives</strong></a></li>
-		<li><a href="contact.html">contact</a></li>
+	<ul class="menu">
+			<li><a href="about.html">about</a></li>
+			<li><a href="archives.html">archives</a></li>
+			<li><a href="contact.html">contact</a></li>
 	</ul>
 
-	<div class="image archive-text">
-	<h2 class="archive-year">2013 archives. Man, this is ugly.</h2>
-	<!--again, would the archive lists need to be <ol>?-->
+	<div class="column1of3">
+	<p class="headline">2013 archives</p>
+<!--Supposed to be <ol>-->
 	<ul>
 		<li>JAN (12)</li>
 		<li>FEB (18)</li>
@@ -33,8 +34,8 @@
 	</ul>
 	</div>
 
-	<div class="image archive-text">
-	<h2 class="archive-year">2012 archives</h2>
+	<div class="column2of3">
+	<p class="headline">2012 archives</p>
 	<ul>
 		<li>JAN (12)</li>
 		<li>FEB (18)</li>
@@ -51,8 +52,8 @@
 	</ul>
 	</div>
 
-	<div class="image archive-text">
-	<h2 class="archive-year">2011 archives</h2>
+	<div class="column3of3">
+	<p class="headline">2011 archives</p>
 	<ul>
 		<li>JAN (12)</li>
 		<li>FEB (18)</li>
@@ -69,7 +70,9 @@
 	</ul>
 	</div>
 
-	<p>&copy; Super Blog 2013</p>
+	<div class="footer">
+		<p>&copy; Super Blog 2013</p>
+	</div>
 
 </body>
 </html>
