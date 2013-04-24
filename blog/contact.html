@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--Sprint 7-responsive design.-->
 
 <html>
 
@@ -8,23 +9,25 @@
 </head>
 
 <body>
-	<header>
-		<div id="bloglogo">
-			<a href="index.html"><img src="images/blog-logo.png" alt="Super Blog"></a>
-		</div>
-	</header>
-	<ul class="menu">
+	<section id="wrapper">
+	<div><!--would responsive section styling need to be here to wrap logo and nav correctly?-->
+		<ul class="menu">
 			<li><a href="about.html">about</a></li>
 			<li><a href="archives.html">archives</a></li>
 			<li><a href="contact.html">contact</a></li>
-	</ul>
+		</ul>
 
-	<div class="column1of2">
-		<p class="headline">HOW TO REACH US</p>
-		<p>DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</p> 
+		<div id="bloglogo">
+			<a href="index.html"><img src="images/blog-logo.png" alt="Super Blog"></a>
+		</div>
 	</div>
 
-	<div class="column2of2">
+	<section id="sidebar">
+		<p class="headline">HOW TO REACH US</p>
+		<p>DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</p> 
+	</section>
+
+	<section id="content">
 		<img src="images/phone.png" alt="phone"/>
 <!--below  form is taken straight from the duckett book, for now-->
 		<form action="example.php" method="post">
@@ -47,11 +50,15 @@
 				<input type="submit" value="Register" id="submit" />
 			</div>
 		</form>
-	</div>
+	</section>
+
+	<div style='clear:both;'>
+  	</div>
 
 	<div class="footer">
 		<p>&copy; Super Blog 2013</p>
 	</div>
 
+</section>
 </body>
 </html>

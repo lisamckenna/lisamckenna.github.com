@@ -1,3 +1,5 @@
+/*Sprint 7-responsive design.*/
+
 @font-face {
     font-family: 'LeagueGothicRegular';
     src: url('fonts/League_Gothic-webfont.eot');
@@ -31,13 +33,37 @@
     font-style: normal;
 }
 
+#wrapper { 
+	width:100%; 
+	margin:0 auto; 
+	max-width:1024px; 
+}
+
+#sidebar { 
+	float:left; 
+	width:240px; 
+	margin-right:1%; 
+}
+
+#content { 
+	float:right; 
+	width:642px; 
+	margin-left:1%; 
+}
+
+@media screen and (max-width:600px) {
+    #sidebar { float:none; width:auto; margin:0; }
+    #content { float:none; width:auto; margin:auto; }
+    #bloglogo { float:none; width:90%; margin:auto; padding-left: 10%; }
+    .menu { float:none; width:90%; margin:auto; padding-left: 10%; }
+}
+
 body {
 	font-family: 'RalewayRegular'; Arial; sans-serif;
-	font-size: 14px;
+	font-size: .875em;
 	line-height: 1.5em;
 }
 
-/*blog logo is only hover-able from the top one-third, what would need to be adjusted to clear that?*/
 #bloglogo {
 	text-align: left;
 	margin-left: 15px;
@@ -47,54 +73,36 @@ body {
 
 /*this is the top container holding nav items*/
 .menu {
-	width: 993px;
 	padding: 15px;
-	text-align: right;
-	position: absolute;
-	top: 40px;
+	float: right;
+	clear: both;
 }
 
-/*this is the nav text*/
+/*this is the nav bar text*/
 .menu li {
 	display: inline;
 	margin: 15px;
+	font-size: 1.25em;
 	font-family: 'RalewayBold'; HelveticaNeue-Bold; sans-serif;
-	font-size: 18px;
 }
 
-
-/*below are the two floats on home page*/
-.column1of2 {
-	float: left;
-	width: 240px;
-	margin: 10px;
-	padding-left: 15px;
-}
-
-.column2of2 {
-	float: left;
-	width: 642px;
-	margin: 10px;
-	padding-left: 50px;
-}
-
-.no-indent ol {
+ol.no-indent {
 	margin-left: 0px; 
-	padding-left: 0px; /*is this what would make the <ol> align left, no indent?*/
-	list-style-type: none; /*and shouldn't this take away the numbers from the list?*/
+	padding-left: 0px;
+	list-style-type: none;
 	font-family: 'RalewayRegular'; Arial; sans-serif;
-	font-size: 14px;
-	line-height: 1.5em;
+	font-size: 1em;
 }
 
 p.subhead {
 	font-family: 'RalewayBold'; Arial; sans-serif;
-	font-size: 12px;
+	font-size: 1em;
 }
 
 p.headline {
 	font-family: 'LeagueGothicRegular'; Arial; sans-serif;
-	font-size: 36px;
+	font-size: 2.5em;
+	line-height: 1em;
 }
 
 a:link {
@@ -116,7 +124,7 @@ a:visited {
 	font-family: 'LeagueGothicRegular'; Arial; sans-serif;
 	color: #006056;
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 1.875em;
 	letter-spacing: .15em;
 }
 
@@ -126,7 +134,7 @@ h5 {
 
 h2 {
     font-family: 'LeagueGothicRegular'; Arial; sans-serif;
-    font-size: 36px;
+    font-size: 2.5em;
 } 
 
 .archive-text {
@@ -156,9 +164,6 @@ img.align-left {
 	width: 960px;
 }
 
-.content {
-	height: 100%;
-}
 /*==========================this is form stuff from the book, i didn't style this=======================*/
 .contact-form {
 	border-bottom: 1px solid black;

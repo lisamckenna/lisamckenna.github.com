@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--Sprint 5.-->
+<!--Sprint 7-responsive design.-->
 
 <html>
 
@@ -9,36 +9,38 @@
 </head>
 
 <body>
-	<header>
-		<div id="bloglogo">
-			<a href="index.html"><img src="images/blog-logo.png" alt="Super Blog"></a>
-		</div>
-	</header>
-	<ul class="menu">
+
+<section id="wrapper">
+	<div><!--would responsive section styling need to be here to wrap logo and nav correctly?-->
+		<ul class="menu">
 			<li><a href="about.html">about</a></li>
 			<li><a href="archives.html">archives</a></li>
 			<li><a href="contact.html">contact</a></li>
-	</ul>
+		</ul>
 
-	<div class="column1of2">
-	<a name="top"></a>
-	<p class="subhead">RECENT POSTS:</p>
-	<!--I want the <ol> to have no numbers, and flush left under the subhead. See my CSS for what I did.-->
-	<ol class="no-indent">
-		<li><a href="#post1">The quick, brown fox jumps over a lazy dog.</a></li><br>
-		<li><a href="#post2">Jolt my wax bed.</a></li><br>
-		<li><a href="#post3">A very bad quack jinx zippy fowls.</a></li><br>
-		<li><a href="#post4">Flummoxed by job.</a></li><br>
-		<li><a href="#post5">Cozy sphinx waves quart jug of bad milk.</a></li><br>
-		<li><a href="#post6">Few quips galvanized box.</a></li><br>
-		<li><a href="#post7">Quick brown dogs jump over the lazy fox.</a></li><br>
-		<li><a href="#post8">Blowzy red vixens fight.</a></li><br>
-	</ol>
+		<div id="bloglogo">
+			<a href="index.html"><img src="images/blog-logo.png" alt="Super Blog"></a>
+		</div>
 	</div>
+
+	<section id="sidebar">
+			<a name="top"></a>
+			<p class="subhead">RECENT POSTS:</p>
+			<ol class="no-indent">
+				<li><a href="#post1">The quick, brown fox jumps over a lazy dog.</a></li>
+				<li><a href="#post2">Jolt my wax bed.</a></li>
+				<li><a href="#post3">A very bad quack jinx zippy fowls.</a></li>
+				<li><a href="#post4">Flummoxed by job.</a></li>
+				<li><a href="#post5">Cozy sphinx waves quart jug of bad milk.</a></li>
+				<li><a href="#post6">Few quips galvanized box.</a></li>
+				<li><a href="#post7">Quick brown dogs jump over the lazy fox.</a></li>
+				<li><a href="#post8">Blowzy red vixens fight.</a></li>
+			</ol>
+	</section>
 	
-	<div class="column2of2">
+	<section id="content">
 		<p id="post1">
-		<p class="subhead">FEB 13, 2013</p> <!--notice I removed the h-tags for subheads and blog titles!-->
+		<p class="subhead">FEB 13, 2013</p>
 		<p class="headline">THE QUICK BROWN FOX JUMPS OVER A LAZY DOG.</p>
 		<p>DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! <em>"Now fax quiz Jack!"</em> my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. <a href="#top"><i>(back to top)</i></a></p><hr>
 
@@ -76,11 +78,14 @@
 		<p class="subhead">MAR 14, 2013</p>
 		<p class="headline">BLOWZY RED VIXENS FIGHT.</p>
 		<p>Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard's job is to vex chumps quickly in fog. Watch "<a href="http://www.jeopardy.com/">Jeopardy!</a>", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc<sup>[1]</sup> killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove <strong>six dozen</strong> plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. <a href="#top"><i>(back to top)</i></a></p>
-	</div>
+	</section>
+
+	<div style='clear:both;'>
+  	</div>
 
 	<div class="footer">
 		<p>&copy; Super Blog 2013</p>
 	</div>
-
+</section>
 </body>
 </html>
