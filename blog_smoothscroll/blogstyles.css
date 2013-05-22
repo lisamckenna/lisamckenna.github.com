@@ -1,0 +1,189 @@
+/*Sprint 7-responsive design.*/
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('fonts/League_Gothic-webfont.eot');
+    src: url('fonts/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/League_Gothic-webfont.woff') format('woff'),
+         url('fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('fonts/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('fonts/Raleway-Regular-webfont.eot');
+    src: url('fonts/Raleway-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Raleway-Regular-webfont.woff') format('woff'),
+         url('fonts/Raleway-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Raleway-Regular-webfont.svg#RalewayRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('fonts/Raleway-Bold-webfont.eot');
+    src: url('fonts/Raleway-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Raleway-Bold-webfont.woff') format('woff'),
+         url('fonts/Raleway-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Raleway-Bold-webfont.svg#RalewayBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrapper { 
+	width:100%; 
+	margin:0 auto; 
+	max-width:1024px; 
+}
+
+#sidebar { 
+	float:left; 
+	width:240px; 
+	margin-right:1%; 
+}
+
+#content { 
+	float:right; 
+	width:642px; 
+	margin-left:1%; 
+}
+
+@media screen and (max-width:600px) {
+    #sidebar { float:none; width:auto; margin:0; }
+    #content { float:none; width:auto; margin:auto; }
+    #bloglogo { float:none; width:90%; margin:auto; padding-left: 10%; }
+    .menu { float:none; width:90%; margin:auto; padding-left: 10%; }
+}
+
+body {
+	font-family: 'RalewayRegular'; Arial; sans-serif;
+	font-size: .875em;
+	line-height: 1.5em;
+}
+
+#bloglogo {
+	text-align: left;
+	margin-left: 15px;
+	border-bottom: 1px solid black;
+	width: 970px;
+}
+
+/*this is the top container holding nav items*/
+.menu {
+	padding: 15px;
+	float: right;
+	clear: both;
+}
+
+/*this is the nav bar text*/
+.menu li {
+	display: inline;
+	margin: 15px;
+	font-size: 1.25em;
+	font-family: 'RalewayBold'; HelveticaNeue-Bold; sans-serif;
+}
+
+ol.no-indent {
+	margin-left: 0px; 
+	padding-left: 0px;
+	list-style-type: none;
+	font-family: 'RalewayRegular'; Arial; sans-serif;
+	font-size: 1em;
+}
+
+p.subhead {
+	font-family: 'RalewayBold'; Arial; sans-serif;
+	font-size: 1em;
+}
+
+p.headline {
+	font-family: 'LeagueGothicRegular'; Arial; sans-serif;
+	font-size: 2.5em;
+	line-height: 1em;
+}
+
+a:link {
+	color: #FF9140;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #67E300;
+	text-decoration: none;
+}
+
+a:visited {
+	color: blue;
+	text-decoration: none;
+}
+
+.archive-year {
+	font-family: 'LeagueGothicRegular'; Arial; sans-serif;
+	color: #006056;
+	text-transform: uppercase;
+	font-size: 1.875em;
+	letter-spacing: .15em;
+}
+
+h5 {
+	font-family: 'RalewayBold'; Arial; sans-serif;
+}
+
+h2 {
+    font-family: 'LeagueGothicRegular'; Arial; sans-serif;
+    font-size: 2.5em;
+} 
+
+.archive-text {
+	color: #ffffff;
+	padding: 10px;
+}
+
+/*for screaming lady image on about page*/
+img.align-left {
+	float: left;
+	margin-right: 10px
+}
+
+.column1of3, .column2of3, .column3of3 {
+	width: 300px;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	background-color: #e8e2d6;
+}
+
+.footer {
+	position: relative;
+	clear: left;
+	margin-left: 15px;
+	border-top: 1px solid black;
+	width: 960px;
+}
+
+/*==========================this is form stuff from the book, i didn't style this=======================*/
+.contact-form {
+	border-bottom: 1px solid black;
+	margin: 20px;
+	padding-bottom: 10px;
+	width: 260px;
+}
+
+.title {
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+.radio-buttons label {
+	float: none;
+}
+
+.submit {
+	text-align: right;
+}
+/*==========================end form stuff from the book=======================*/

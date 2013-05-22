@@ -1,0 +1,142 @@
+<!DOCTYPE html> 
+<!--Sprint 10-smooth scroll-->
+<!--Bonnie, I tried getting this script to work. Used the one supplied in the lab-->
+
+<html>
+
+<head>
+	<title>Super Blog</title>
+	<link href="blogstyles.css" type="text/css" rel="stylesheet" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquerysx/1.4.3/jquery.min.js"></script>
+	<script> 
+	$(document).ready(function() {
+  function filterPath(string) {
+  return string
+    .replace(/^\//,'')
+    .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+    .replace(/\/$/,'');
+  }
+  var locationPath = filterPath(location.pathname);
+  var scrollElem = scrollableElement('html', 'body');
+ 
+  $('a[href*=#]').each(function() {
+    var thisPath = filterPath(this.pathname) || locationPath;
+    if (  locationPath == thisPath
+    && (location.hostname == this.hostname || !this.hostname)
+    && this.hash.replace(/#/,'') ) {
+      var $target = $(this.hash), target = this.hash;
+      if (target) {
+        var targetOffset = $target.offset().top;
+        $(this).click(function(event) {
+          event.preventDefault();
+          $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+            location.hash = target;
+          });
+        });
+      }
+    }
+  });
+ 
+  function scrollableElement(els) {
+    for (var i = 0, argLength = arguments.length; i <argLength; i++) {
+      var el = arguments[i],
+          $scrollElement = $(el);
+      if ($scrollElement.scrollTop()> 0) {
+        return el;
+      } else {
+        $scrollElement.scrollTop(1);
+        var isScrollable = $scrollElement.scrollTop()> 0;
+        $scrollElement.scrollTop(0);
+        if (isScrollable) {
+          return el;
+        }
+      }
+    }
+    return [];
+  }
+ 
+});
+	</script>
+</head>
+
+<body>
+<section id="wrapper">
+	<div>
+		<ul class="menu">
+			<li><a href="about.html">about</a></li>
+			<li><a href="archives.html">archives</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+
+		<div id="bloglogo">
+			<a href="index.html"><img src="images/blog-logo.png" alt="Super Blog"></a>
+		</div>
+	</div>
+
+	<section id="sidebar">
+			<a name="top"></a>
+			<p class="subhead">RECENT POSTS:</p>
+			<ol class="no-indent">
+				<li><a href="#post1">The quick, brown fox jumps over a lazy dog.</a></li>
+				<li><a href="#post2">Jolt my wax bed.</a></li>
+				<li><a href="#post3">A very bad quack jinx zippy fowls.</a></li>
+				<li><a href="#post4">Flummoxed by job.</a></li>
+				<li><a href="#post5">Cozy sphinx waves quart jug of bad milk.</a></li>
+				<li><a href="#post6">Few quips galvanized box.</a></li>
+				<li><a href="#post7">Quick brown dogs jump over the lazy fox.</a></li>
+				<li><a href="#post8">Blowzy red vixens fight.</a></li>
+			</ol>
+	</section>
+	
+	<section id="content">
+		<p id="post1">
+		<p class="subhead">FEB 13, 2013</p>
+		<p class="headline">THE QUICK BROWN FOX JUMPS OVER A LAZY DOG.</p>
+		<p>DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. Quick, Baz, get my woven flax jodhpurs! <em>"Now fax quiz Jack!"</em> my brave ghost pled. Five quacking zephyrs jolt my wax bed. Flummoxed by job, kvetching W. zaps Iraq. Cozy sphinx waves quart jug of bad milk. <a href="#top"><i>(back to top)</i></a></p><hr>
+
+		<p id="post2">
+		<p class="subhead">FEB 21, 2013</p>
+		<p class="headline">JOLT MY WAX BED.</p>
+		<p>Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard's job is to vex chumps quickly in fog. Watch "<a href="http://www.jeopardy.com/">Jeopardy!</a>", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc<sup>[1]</sup> killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove <strong>six dozen</strong> plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. <a href="#top"><i>(back to top)</i></a></p><hr>
+
+		<p id="post3">
+		<p class="subhead">FEB 25, 2013</p>
+		<p class="headline">A VERY BAD QUACK MIGHT JINX ZIPPY FOWLS.</p>
+		<p>Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: <a href="http://bit.ly/16p673X">twenty six letters</a> - no forcing a jumbled quiz! Crazy Fredericka bought <em>many</em> very exquisite opal jewels.Sixty zippers were quickly picked from the woven jute bag. A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watch experts amazed the judge. Jack quietly moved up front and seized the big ball of wax. The quick, brown fox jumps over a lazy dog. <a href="#top"><i>(back to top)</i></a></p><hr>
+
+		<p id="post4">
+		<p class="subhead">FEB 28, 2013</p>
+		<p class="headline">FLUMMOXED BY JOB.</p>
+		<p>Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: <a href="http://bit.ly/16p673X">twenty six letters</a> - no forcing a jumbled quiz! Crazy Fredericka bought <em>many</em> very exquisite opal jewels.Sixty zippers were quickly picked from the woven jute bag. A quick movement of the enemy will jeopardize six gunboats. All questions asked by five watch experts amazed the judge. Jack quietly moved up front and seized the big ball of wax. The quick, brown fox jumps over a lazy dog. <a href="#top"><i>(back to top)</i></a></p><hr>
+
+		<p id="post5">
+		<p class="subhead">MAR 3, 2013</p>
+		<p class="headline">COZY SPHINX WAVES QUART JUG OF BAD MILK.</p>
+		<p>Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard's job is to vex chumps quickly in fog. Watch "<a href="http://www.jeopardy.com/">Jeopardy!</a>", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc<sup>[1]</sup> killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove <strong>six dozen</strong> plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. <a href="#top"><i>(back to top)</i></a></p><hr>
+
+		<p id="post6">
+		<p class="subhead">MAR 8, 2013</p>
+		<p class="headline">FEW QUIPS GALVANIZED BOX.</p>
+		<p>Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard's job is to vex chumps quickly in fog. Watch "<a href="http://www.jeopardy.com/">Jeopardy!</a>", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc<sup>[1]</sup> killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove <strong>six dozen</strong> plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. <a href="#top"><i>(back to top)</i></a></p><hr>
+
+		<p id="post7">
+		<p class="subhead">MAR 8, 2013</p>
+		<p class="headline">QUICK BROWN DOGS JUMP OVER THE LAZY FOX.</p>
+		<p>Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard's job is to vex chumps quickly in fog. Watch "<a href="http://www.jeopardy.com/">Jeopardy!</a>", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc<sup>[1]</sup> killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove <strong>six dozen</strong> plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. <a href="#top"><i>(back to top)</i></a></p><hr>
+
+		<p id="post8">
+		<p class="subhead">MAR 14, 2013</p>
+		<p class="headline">BLOWZY RED VIXENS FIGHT.</p>
+		<p>Few quips galvanized the mock jury box. Quick brown dogs jump over the lazy fox. The jay, pig, fox, zebra, and my wolves quack! Blowzy red vixens fight for a quick jump. Joaquin Phoenix was gazed by MTV for luck. A wizard's job is to vex chumps quickly in fog. Watch "<a href="http://www.jeopardy.com/">Jeopardy!</a>", Alex Trebek's fun TV quiz game. Woven silk pyjamas exchanged for blue quartz. Brawny gods just flocked up to quiz and vex him. Adjusting quiver and bow, Zompyc<sup>[1]</sup> killed the fox. My faxed joke won a pager in the cable TV quiz show. Amazingly few discotheques provide jukeboxes. My girl wove <strong>six dozen</strong> plaid jackets before she quit. Six big devils from Japan quickly forgot how to waltz. <a href="#top"><i>(back to top)</i></a></p>
+	</section>
+
+	<div style='clear:both;'>
+  	</div>
+
+	<div class="footer">
+		<p>&copy; Super Blog 2013</p>
+	</div>
+</section>
+
+</body>
+</html>

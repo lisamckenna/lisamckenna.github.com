@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--Sprint 7-responsive design.-->
+
+<html>
+
+<head>
+	<title>Super Blog</title>
+	<link href="blogstyles.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+	<section id="wrapper">
+	<div><!--would responsive section styling need to be here to wrap logo and nav correctly?-->
+		<ul class="menu">
+			<li><a href="about.html">about</a></li>
+			<li><a href="archives.html">archives</a></li>
+			<li><a href="contact.html">contact</a></li>
+		</ul>
+
+		<div id="bloglogo">
+			<a href="index.html"><img src="images/blog-logo.png" alt="Super Blog"></a>
+		</div>
+	</div>
+
+	<section id="sidebar">
+		<p class="headline">HOW TO REACH US</p>
+		<p>DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox.</p> 
+	</section>
+
+	<section id="content">
+		<img src="images/phone.png" alt="phone"/>
+<!--below  form is taken straight from the duckett book, for now-->
+		<form action="example.php" method="post">
+			<div class="contact-form">
+				<label for="name" class="title">Name:</label>
+				<input type="text" id="name" name="name" />
+			</div>
+			<div class="contact-form">
+				<label for="email" class="title">Email:</label>
+				<input type="email" id="email" name="email" />
+			</div>
+			<div class="contact-form radio-buttons">
+				<span class="title">Gender:</span>
+				<input type="radio" name="gender" id="male" value="M" />
+				<label for="male">M</label>
+				<input type="radio" name="gender" id="female" value="F" />
+				<label for="female">F</label><br />
+			</div>
+			<div class="contact-form submit">
+				<input type="submit" value="Register" id="submit" />
+			</div>
+		</form>
+	</section>
+
+	<div style='clear:both;'>
+  	</div>
+
+	<div class="footer">
+		<p>&copy; Super Blog 2013</p>
+	</div>
+
+</section>
+</body>
+</html>
