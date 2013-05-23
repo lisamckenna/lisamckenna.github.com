@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('fonts/Raleway-Regular-webfont.eot');
+    src: url('fonts/Raleway-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Raleway-Regular-webfont.woff') format('woff'),
+         url('fonts/Raleway-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Raleway-Regular-webfont.svg#RalewayRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+			
+body {
+	color: #593f3d;
+	background: url("images/greenpattern.png");
+	font-family: 'RalewayRegular', "Times New Roman", Times, serif;
+	font-size: 1em;
+	margin: 0px;
+	text-align: center;}
+
+a {
+	color: #cc2d30;
+	text-decoration: none;}
+
+a:hover {
+	color: #ffffff;}
+
+.header {
+	padding: 0px 0px 0px 0px;
+	height: 100px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 50;}
+			
+.nav {
+	float: right;
+	font-family: 'RalewayRegular', Helvetica, Arial, sans-serif;
+	padding: 45px 0px 0px 0px;
+	text-align: right;}
+
+.wrapper {
+	width: 960px;
+	margin: 0px auto;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-align: left;}
+			
+.logo {
+	margin-top: 20px;}
+			
+h1, h2 {
+	font-family: 'RalewayRegular', Arial, sans-serif;
+	font-weight: normal;
+	color: #f93f26;}
+	
+h1 {
+	font-size: 240%;
+	margin-top: 140px;}
+
+h3 {
+	font-size: normal;
+}
+
+p .subhead {
+	font-family: 'RalewayRegular', Arial, sans-serif;
+	font-size: 2em;}
+
+.main-story {
+	background-image: url("images/triangles.png");
+	background-repeat: no-repeat;
+	background-position: 122px 142px;
+	height: 570px;}
+
+.more-articles {
+	border-top: 1px solid #ffffff;
+	padding: 10px;}
+
+.more-articles p {
+	border-bottom: 2px solid #ffffff;
+	padding: 5px 0px 15px 0px;
+	font-size: 1em;
+	line-height: 1.5em;}
+
+.more-articles p:last-child {
+	border-bottom: none;}
+
+.footer {
+	clear: both;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 5px 10px;}
+
+.footer p {
+	font-family: 'RalewayRegular', Arial, sans-serif;
+	font-size: 85%;
+	text-align: right;}
+
+.footer a {
+	color: #ffffff;}
